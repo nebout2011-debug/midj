@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node src/server.ts",
-    "test": "node --test test/webhook.test.ts test/agent.test.ts"
+    "test": "node --test test/webhook.test.ts test/agent.test.ts",
+    "prove": "node prove.mjs"
   }
 }

@@ -35,6 +35,8 @@ If `WHATSAPP_VERIFY_TOKEN` is missing or empty, or `PORT` is not a number from 1
 npm test
 ```
 
+Run `npm run prove` (no keys needed) to run all tests, then one fake sale from voice note to held, released and refunded payments.
+
 ## Examples
 
 GET handshake (with the server started using `example-verify-token`):

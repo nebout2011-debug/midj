@@ -29,7 +29,7 @@ export type ParseResult = ParseSuccess | ParseFailure;
 // Matches the first occurrence of a bare integer followed by an
 // optional currency suffix. We capture everything before it as the
 // product name and discard the rest.
-const PRICE_RE = /^(.*?)\b(\d+)\s*(?:fcfa|cfa|fr?)\b(.*)$/i;
+const PRICE_RE = /^(.*?)\b(\d+)\s*(?:fcfa|cfa|francs?|fr?)\b(.*)$/i;
 
 // Fallback: a bare integer at the end of the string with no suffix.
 const BARE_NUMBER_RE = /^(.+?)\s+(\d+)\s*$/;

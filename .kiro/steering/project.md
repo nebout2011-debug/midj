@@ -21,7 +21,7 @@ src/
   transcription.ts – Transcriber interface, FakeTranscriber
 test/
   webhook.test.ts  – original 10 webhook/HTTP tests
-  agent.test.ts    – 35 tests covering listings, payments, agent, HTTP integration
+  agent.test.ts    – 36 tests covering listings, payments, agent, HTTP integration
 ```
 
 ## Key conventions
@@ -33,7 +33,7 @@ test/
 
 ## Running
 ```sh
-# Tests (45 total)
+# Tests (46 total)
 npm test
 
 # Dev server (requires WHATSAPP_VERIFY_TOKEN env var)

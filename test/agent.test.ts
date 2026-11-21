@@ -41,6 +41,13 @@ describe('parseTranscript', () => {
     assert.equal(r.priceFcfa, 3000);
   });
 
+  test('parses with the spoken suffix "francs"', () => {
+    const r = parseTranscript('tilapia frais 2500 francs');
+    assert.ok(r.ok);
+    assert.equal(r.product, 'tilapia frais');
+    assert.equal(r.priceFcfa, 2500);
+  });
+
   test('parses bare number at end (no suffix)', () => {
     const r = parseTranscript('Mangues du verger 800');
     assert.ok(r.ok);
